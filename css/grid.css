@@ -1,0 +1,34 @@
+.gridcontainer {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    justify-items: stretch;
+    grid-template-areas:
+      "AreaFirst AreaFirst AreaSecond AreaFourth"
+      "AreaFirst AreaFirst AreaThird AreaFifth";
+  }
+  .gridcontainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+  }
+  
+  .AreaFirst { grid-area: AreaFirst;  }
+  
+  .AreaSecond { grid-area: AreaSecond;  }
+  
+  .AreaThird { grid-area: AreaThird;  }
+  
+  .AreaFourth { grid-area: AreaFourth;  }
+  
+  .AreaFifth { grid-area: AreaFifth;  }
+
+  .gridtext {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
